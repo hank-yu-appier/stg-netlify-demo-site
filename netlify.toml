@@ -1,0 +1,8 @@
+[build]
+  publish = "."
+  command = "echo 'Netlify Demo Site Build Complete!'"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
