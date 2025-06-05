@@ -1,2 +1,2 @@
-var appId = "bbad5abae418637ada00";
-importScripts("https://9ebb-2402-7500-506-a890-e9c8-5635-a71e-38ee.ngrok-free.app/qg-sw.js");
+var appId = "85aefa36f3f97d8233be";
+importScripts("https://cdn-stg-gcp-jp0.aiqua.io/sdk/v3/r/qg-sw.js");
