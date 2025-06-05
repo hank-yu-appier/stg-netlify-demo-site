@@ -7,9 +7,7 @@
   to = "/qg-sw.85aefa36f3f97d8233be.js"
   status = 200
 
-# Exclude .js files from catch-all
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-  conditions = {Role = ["!*.js"]}
