@@ -6,8 +6,6 @@
   from = "/qg-sw.bbad5abae418637ada00.js"
   to = "/qg-sw.bbad5abae418637ada00.js"
   status = 200
-  force = true
-  headers = {Content-Type = "text/javascript"}
 
 [[redirects]]
   from = "/*"
