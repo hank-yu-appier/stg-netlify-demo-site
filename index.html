@@ -20,6 +20,12 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    const channel = new BroadcastChannel('sw-messages');
+    channel.addEventListener('message', event => {
+        console.log('Message received from service worker:', event.data.notification.title, event.data.notification.body);
+    });
+    </script>
     <script type="text/javascript">
         !function(q,g,r,a,p,h,js) {
           q.appier=q.qg;

@@ -3,8 +3,8 @@
   command = "echo 'Netlify Demo Site Build Complete!'"
 
 [[redirects]]
-  from = "/qg-sw.bbad5abae418637ada00.js"
-  to = "/qg-sw.bbad5abae418637ada00.js"
+  from = "/qg-sw.85aefa36f3f97d8233be.js"
+  to = "/qg-sw.85aefa36f3f97d8233be.js"
   status = 200
 
 [[redirects]]
