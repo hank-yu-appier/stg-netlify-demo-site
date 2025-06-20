@@ -15,6 +15,7 @@
         <button id="actionButton">Click Me</button>
         <p id="message"></p>
     </main>
+    <div id="scrollPercent" style="position:fixed;top:10px;right:10px;background:#222;color:#fff;padding:4px 8px;border-radius:4px;z-index:999;">0%</div>
     <footer>
         <p>&copy; 2025 Staging Netlify Demo Site</p>
     </footer>
@@ -38,6 +39,17 @@
           h.parentNode.insertBefore(p,h);
         } (window,document,'script','https://cdn-stg-gcp-jp0.aiqua.io/qgraph.85aefa36f3f97d8233be.js');
       </script>
+
+    <script>
+    function updateScrollPercent() {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const percent = docHeight > 0 ? Math.round((scrollTop / docHeight) * 100) : 0;
+        document.getElementById('scrollPercent').textContent = percent + '%';
+    }
+    window.addEventListener('scroll', updateScrollPercent);
+    updateScrollPercent();
+    </script>
 
 </body>
 
