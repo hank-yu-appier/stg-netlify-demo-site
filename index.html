@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Staging Netlify Demo Site</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <h1>Welcome to the Staging Netlify Demo Site</h1>
@@ -14,43 +16,26 @@
         <p>This is a simple website deployed with Netlify.</p>
         <button id="actionButton">Click Me</button>
         <p id="message"></p>
-        
+
     </main>
-    <div id="scrollPercent" style="position:fixed;top:10px;right:10px;background:#222;color:#fff;padding:4px 8px;border-radius:4px;z-index:999;">0%</div>
+
     <footer>
         <p>&copy; 2025 Staging Netlify Demo Site</p>
     </footer>
 
-    <script>
-    const channel = new BroadcastChannel('sw-messages');
-    channel.addEventListener('message', event => {
-        console.log('Message received from service worker:', event.data.notification.title, event.data.notification.body);
-    });
-    </script>
     <script type="text/javascript">
-        !function(q,g,r,a,p,h,js) {
-          q.appier=q.qg;
-          if(q.qg)return;
-          js=q.appier=q.qg=function() {
-            js.callmethod ? js.callmethod.call(js, arguments) : js.queue.push(arguments);
-          };
-          js.queue=[];
-          p=g.createElement(r);p.async=!0;p.src=a;h=g.getElementsByTagName(r)[0];
-          h.parentNode.insertBefore(p,h);
-        } (window,document,'script','https://cdn-stg-gcp-jp0.aiqua.io/qgraph.85aefa36f3f97d8233be.js');
-      </script>
-
-    <script>
-    function updateScrollPercent() {
-        const scrollTop = window.scrollY;
-        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const percent = docHeight > 0 ? Math.round((scrollTop / docHeight) * 100) : 0;
-        document.getElementById('scrollPercent').textContent = percent + '%';
-    }
-    window.addEventListener('scroll', updateScrollPercent);
-    updateScrollPercent();
+        !function (q, g, r, a, p, h, js) {
+            q.appier = q.qg;
+            if (q.qg) return;
+            js = q.appier = q.qg = function () {
+                js.callmethod ? js.callmethod.call(js, arguments) : js.queue.push(arguments);
+            };
+            js.queue = [];
+            p = g.createElement(r); p.async = !0; p.src = a; h = g.getElementsByTagName(r)[0];
+            h.parentNode.insertBefore(p, h);
+        }(window, document, 'script', 'https://cdn-stg-gcp-jp0.aiqua.io/qgraph.85aefa36f3f97d8233be.js');
     </script>
-
+    <script src="https://jscdn-stg.appier.net/aa.js?id=rakuten.co.jp"></script>
 </body>
 
 </html>
